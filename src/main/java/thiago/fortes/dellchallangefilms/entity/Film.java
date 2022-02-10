@@ -1,9 +1,6 @@
 package thiago.fortes.dellchallangefilms.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,6 +10,7 @@ import javax.persistence.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
 @Entity
 @Builder
 public class Film {
@@ -24,6 +22,5 @@ public class Film {
     private String releasedate;
     private String cinematography;
     private String type;
-
 }
 
